@@ -1,3 +1,326 @@
+header {
+  background-color: black;
+  top: 0;
+  z-index: 1;
+  position: sticky;
+}
+header h1 {
+  font-size: 100px;
+}
 
+.fixed-top {
+  position: sticky;
+}
+
+.navbar {
+  background-color: black !important;
+}
+
+.navbar-brand {
+  font-size: 100px;
+}
+
+.offcanvas {
+  background-color: black !important;
+  font-size: 50px;
+  top: 0;
+}
+
+.offcanvas-body {
+  z-index: 1;
+}
+
+main {
+  padding: top 90px;
+}
+main h3 {
+  font-size: 30px;
+}
+main a {
+  font-size: 30px;
+}
+main div p {
+  font-size: 30px;
+}
+
+.carrusel div {
+  z-index: 0;
+}
+.carrusel div img {
+  object-fit: cover;
+  width: 100%;
+  height: 900px;
+}
+
+.info {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  margin: 30px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.info h2 {
+  font-size: 50px;
+  display: inline-block;
+  padding: 10px;
+  margin: 10px 10px;
+}
+.info h2::first-line {
+  color: white;
+  font-size: 75px;
+  font-style: oblique;
+}
+.info p {
+  font-size: 40px;
+}
+.info h3 {
+  font-size: 60px;
+}
+.info a {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.productos h2 {
+  font-size: 50px;
+  text-align: center;
+  background-color: rgb(45, 2, 146);
+  color: white;
+  margin: 50px 0px;
+}
+.productos div img {
+  width: 300px;
+  height: 300px;
+  border: solid rgba(0, 0, 0, 0.068);
+  border-radius: 20px;
+}
+.productos div a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  background-color: rgb(9, 8, 56);
+  border: solid rgba(0, 0, 0, 0.048);
+  border-radius: 10px;
+  padding: 5px;
+}
+.productos div a:hover {
+  background-color: rgb(109, 2, 8);
+}
+.productos .productos-menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.productos .productos-menu div {
+  text-align: center;
+  color: white;
+  background-color: rgb(45, 2, 146);
+  border: solid rgba(0, 0, 0, 0.144);
+  border-radius: 10px;
+  width: 325px;
+  margin: 30px 20px;
+  padding: 10px;
+}
+.productos .productos-menu div:hover {
+  background-color: rgb(111, 52, 250);
+}
+.productos .productos-menu div p {
+  font-size: 20px;
+  text-align: left;
+}
+.productos .productos-menu div a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  background-color: rgb(9, 8, 56);
+  border: solid rgba(0, 0, 0, 0.048);
+  border-radius: 10px;
+  padding: 5px;
+}
+.productos .productos-menu div h3 {
+  background-color: rgb(9, 8, 56);
+  border-radius: 10px;
+}
+.productos .productos-menu div h4 {
+  font-size: 50px;
+}
+
+.wsp {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  z-index: 1;
+}
+.wsp img {
+  width: 64px;
+  height: 64px;
+}
+
+.grid-galeria {
+  display: grid;
+  margin: 50px;
+  grid-template-columns: repeat(2, 400px);
+  grid-auto-rows: 350px;
+  justify-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.grid-galeria div img {
+  width: 100%;
+  height: 100%;
+}
+.grid-galeria .grid-item {
+  border: solid 2px black;
+  position: relative;
+}
+.grid-galeria .grid-item h2 {
+  position: absolute;
+  bottom: 0;
+  background-color: black;
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+}
+.grid-galeria .grid-item .img-3 {
+  grid-column: span 2;
+}
+
+footer {
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+footer img {
+  width: 50px;
+}
+footer h2 {
+  font-size: 40px;
+}
+footer p {
+  font-size: 40px;
+}
+footer label {
+  font-size: 40px;
+}
+footer input {
+  font-size: 20px;
+  margin: 20px;
+}
+
+/* ----MEDIA SCREEN---- */
+@media screen and (max-width: 600px) {
+  header nav ul {
+    flex-direction: column;
+    font-size: 20px;
+  }
+  header h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1060px) {
+  .info h2 {
+    font-size: 30px;
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .info h2 {
+    font-size: 5px;
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .productos-menu div h3 {
+    font-size: 15px;
+  }
+  .productos .productos-menu div p {
+    font-size: 15px;
+  }
+  .productos .productos-menu div h4 {
+    font-size: 15px;
+  }
+  .productos .productos-menu div {
+    width: 175px;
+  }
+  .productos-menu div img {
+    width: 150px;
+    height: 150px;
+  }
+  .productos-menu div a {
+    font-size: 20px;
+  }
+  .productos-menu div a {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .info h2 {
+    font-size: 20px;
+  }
+  .info a {
+    font-size: 20px;
+  }
+  .info p {
+    font-size: 20px;
+  }
+  .info iframe {
+    height: 200px;
+    width: 300px;
+  }
+  .grid-galeria {
+    grid-auto-rows: 100px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-item h2 {
+    font-size: 10px;
+  }
+  footer h2 {
+    font-size: 20px;
+  }
+  footer img {
+    width: 25px;
+  }
+  footer p {
+    font-size: 30px;
+  }
+  footer p label {
+    font-family: 30px;
+  }
+  .carrusel div img {
+    width: 100%;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .grid-galeria {
+    grid-auto-rows: 250px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-item h2 {
+    font-size: 10px;
+  }
+  .carrusel div img {
+    width: 100%;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 530px) {
+  .grid-galeria {
+    grid-auto-rows: 100px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .grid-item h2 {
+    font-size: 10px;
+  }
+}
 
 /*# sourceMappingURL=estilo.css.map */

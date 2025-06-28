@@ -1,0 +1,32 @@
+header {
+    background-color: black;
+    top: 0;
+    z-index: 1;
+    position: sticky;
+
+    h1 {
+        font-size: 100px;
+    }
+}
+
+.fixed-top {
+    position: sticky;
+}
+
+.navbar {
+    background-color: black !important;
+}
+
+.navbar-brand {
+    font-size: 100px;
+}
+
+.offcanvas {
+    background-color: black !important;
+    font-size: 50px;
+    top: 0;
+}
+
+.offcanvas-body {
+    z-index: 1;
+}

@@ -1,0 +1,31 @@
+//* VARIABLES
+$color-principal: black;
+$color-secundario: rgba(0, 0, 0, 0.068);
+$color-terciario: rgb(45, 2, 146);
+$color-alternativo: rgb(109, 2, 8);
+
+//* LISTAS
+$colores:
+black,
+white,
+rgba(0, 0, 0, 0.068),
+rgb(45, 2, 146),
+rgb(109, 2, 8);
+
+$font-size:
+12px,
+16px,
+20px,
+30px,
+60px;
+
+//* EXTENDS
+%boton{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(9, 8, 56);
+    border: solid rgba(0, 0, 0, 0.048);
+    border-radius: 10px;
+    padding: 5px;
+}
