@@ -1,5 +1,5 @@
 header {
-    background-color: black;
+    background-color: $color-principal;
     top: 0;
     z-index: 1;
     position: sticky;
@@ -14,7 +14,7 @@ header {
 }
 
 .navbar {
-    background-color: black !important;
+    background-color: $color-principal !important;
 }
 
 .navbar-brand {
@@ -22,7 +22,7 @@ header {
 }
 
 .offcanvas {
-    background-color: black !important;
+    background-color: $color-principal !important;
     font-size: 50px;
     top: 0;
 }
