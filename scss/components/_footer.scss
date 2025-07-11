@@ -8,19 +8,19 @@ footer {
     }
 
     h2 {
-        font-size: 40px;
+        font-size: nth($font-size, 3);
     }
 
     p {
-        font-size: 40px;
+        font-size: nth($font-size, 3);
     }
 
     label {
-        font-size: 40px;
+        font-size: nth($font-size, 3);
     }
 
     input {
-        font-size: 20px;
-        margin: 20px;
+        font-size: nth($font-size, 1);
+        margin: nth($font-size, 1);
     }
 }

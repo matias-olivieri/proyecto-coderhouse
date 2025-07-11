@@ -5,7 +5,7 @@ header {
     position: sticky;
 
     h1 {
-        font-size: 100px;
+        font-size: nth($font-size, 6);
     }
 }
 
@@ -18,12 +18,12 @@ header {
 }
 
 .navbar-brand {
-    font-size: 100px;
+    font-size: nth($font-size, 6);
 }
 
 .offcanvas {
     background-color: $color-principal !important;
-    font-size: 50px;
+    font-size: nth($font-size, 4);
     top: 0;
 }
 
